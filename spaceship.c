@@ -16,8 +16,8 @@ void initSpaceship() {
 
 void displaySpaceshipStatus() {
     printf("\nSpaceship Status:\n");
-    printf("Fuel: %d%%\n", spaceship.fuel);
-    printf("Hull Integrity: %d%%\n", spaceship.hullIntegrity);
+    printf("  Fuel: %d%%\n", spaceship.fuel);
+    printf("  Hull Integrity: %d%%\n", spaceship.hullIntegrity);
 }
 
 void maintainSpaceship() {
