@@ -38,7 +38,7 @@ void displayInventory() {
 }
 
 // Currency System
-static int currencyArray[1] = {0};
+static int currencyArray[4] = {0};
 int updateCurrency(int value, CurrencyType currencyType){
     if (currencyArray[currencyType] + value < 0){
         return 1; // currency cannot be set to a negative value
@@ -50,6 +50,9 @@ int updateCurrency(int value, CurrencyType currencyType){
 void displayCurrency(){
     printf("Currency:\n");
     printf("  Galactic Credits: %d\n", currencyArray[GALACTIC_CREDITS]);
+    printf("  Bottle Caps: %d\n", currencyArray[BOTTLECAPS]);
+    printf("  Cheese: %d\n", currencyArray[CHEESE]);
+    printf("  Poker Chips: %d\n", currencyArray[POKER_CHIPS]);
     // Feel free to extend this as we add more types of currency
     return;
 }

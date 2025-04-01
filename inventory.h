@@ -10,6 +10,9 @@ typedef struct {
 
 typedef enum {
     GALACTIC_CREDITS, // 0
+    BOTTLECAPS, // 1
+    CHEESE, // 2
+    POKER_CHIPS, // 3
 } CurrencyType;
 
 void addItem(const char *itemName, int qty);
