@@ -36,3 +36,20 @@ void displayInventory() {
         }
     }
 }
+
+// Currency System
+static int currencyArray[1] = {0};
+int updateCurrency(int value, CurrencyType currencyType){
+    if (currencyArray[currencyType] + value < 0){
+        return 1; // currency cannot be set to a negative value
+    }
+    currencyArray[currencyType] += value;
+    return 0;
+}
+
+void displayCurrency(){
+    printf("Currency:\n");
+    printf("  Galactic Credits: %d\n", currencyArray[GALACTIC_CREDITS]);
+    // Feel free to extend this as we add more types of currency
+    return;
+}

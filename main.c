@@ -30,6 +30,9 @@ int main() {
     displayStory();
 
     while (running) {
+        displaySpaceshipStatus();
+        displayCurrency();
+        printf("\n");
         printMenu();
         if (scanf("%d", &choice) != 1) {
             printf("Invalid input. Please enter a number.\n");

@@ -8,7 +8,13 @@ typedef struct {
     int quantity;
 } Item;
 
+typedef enum {
+    GALACTIC_CREDITS, // 0
+} CurrencyType;
+
 void addItem(const char *itemName, int qty);
 void displayInventory();
+int updateCurrency(int value, CurrencyType currencyType);
+void displayCurrency();
 
 #endif
