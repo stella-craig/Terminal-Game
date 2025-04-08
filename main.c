@@ -6,6 +6,7 @@
 #include "spaceship.h"
 #include "story.h"
 #include "exploration.h"
+#include "travel.h"
 
 void printMenu() {
     printf("\n--- Space Cowboy Quest ---\n");
